@@ -6,7 +6,7 @@ export const config = {
   },
 };
 
-export default async function handler(req: NextRequest, res: NextResponse) {
+export default async function handler(req, res) {
   let count = 0;
 
   const resultStream = new ReadableStream(
